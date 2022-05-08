@@ -1,0 +1,66 @@
+Events:
+    onkeyup, onkeydown, onmouseover, onmouseout
+    onkeypress >> Deprecated
+_________________________________________________
+
+String Methods:
+ToString        toString()
+IndexOf         indexOf( SearchTerm[required], Index to Start forward[Optional] )
+LastIndexOf     lastIndexOf( SearchTerm[required], Index to Start backward[Optional] )
+Search          search( [SearchTerm] ) >> SearchTerm can be a regular expression
+
+Split           split( Separator, Limit )
+Slice           slice( Start[Required], End[Optional] )
+SubString       substring( Start[Required], End[Optional] )
+SubStr          substr( Start[Required], Length[Optional] ) >> Deprecated
+
+in Slice: Start must be smaller than End
+in SubString: If Start smaller than End, Will be swapped
+
+Replace         replace( Old Value, New Value) >> Old Value can be a regular expression
+Concatenation   concat( String, String )
+LowerCase       toLowerCase()
+UpperCase       toUpperCase()
+Trim            trim() >> Remove any spaces from Start and End
+link("http://www.google.com") >> Deprecated
+_________________________________________________
+
+Math:
+Math.ceil(number)   Rounds to the bigger number
+Math.floor(number)  Rounds to the smaller number
+Math.round(number)  Rounds to the nearest number
+Math.min(numbers)   Minimum Number
+Math.max(numbers)   Maximum Number
+_________________________________________________
+
+Regular Expressions:    (Used with: Search, Replace, Match, Split, Test)
+/Pattern{Quantifiers}/Attributes
+Pattern:
+    [...]       Character
+    [^..]       Not Character
+    [a-z]       All lower case Characters Range
+    [A-Z]       All upper case Characters Range
+    [0-9]       0 to 9 Numbers Range
+    [^0-9]      Not Range
+    [A-g]       Range [A-Z] and Range [a-g]
+    [0-9a-z]    Double Range [0-9] and [a-z]
+Attributes List:
+    g           Global Search
+    i           Insensitive Case
+    m           Multiline Search
+Quantifiers:
+    Char+       Contains One Character
+    Char{N}     Contains exactly N of Characters
+    Char{N, N}  Contains N between two Ns of Characters
+    Char{N,}    Contains N or more Characters (at least N of Characters)
+_________________________________________________
+
+Date:
+new Date()  =>  Current Timestamp
+new Date(Milliseconds)  =>  Timestamp after these Milliseconds from UTC Jan 1, 1970 00:00:00
+new Date(String Date [Month Day, Year Hours:Minutes:Seconds])   =>  Timestamp of this Date
+new Date(Year, Month, Day, Hours, Minutes, Seconds, Milliseconds)   =>  Timestamp of this Date
+
+ISO Date Format     =>  "YYYY-MM-DDTHH:MM:SSZ" (The International Standard) Z => UTC time
+Short Date Format   =>  "MM/DD/YYYY" 
+Long Date Format    =>  "MMM DD YYYY" or "DD MMM YYYY"
