@@ -1,0 +1,63 @@
+.section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+}
+
+p {
+  color: teal;
+}
+
+span {
+  color: #003030;
+  font-weight: bold;
+}
+
+.w3-org {
+  width: 500px;
+  height: 300px;
+}
+
+table {
+  width: 400px;
+  text-align: center;
+  /* border-radius: 20px; */
+}
+
+caption {
+  color: teal;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid #777;
+}
+
+thead {
+  background-color: cadetblue;
+}
+
+th,
+td {
+  padding: 5px 10px;
+}
+
+tbody td,
+tfoot td {
+  color: #fff;
+}
+
+/* thead th {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+tfoot td {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+} */

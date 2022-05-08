@@ -1,0 +1,104 @@
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+.home {
+  width: 50%;
+  height: 900px;
+  color: white;
+  /* background-color: teal;
+  background-image: url("https://picsum.photos/300/300");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll; */
+  background: teal url("https://picsum.photos/300/300") no-repeat center 90%
+    scroll;
+  margin: 0 auto;
+  padding: 20px;
+  direction: ltr;
+  text-align: left;
+  line-height: 150%;
+}
+
+h1 {
+  letter-spacing: 0.5rem;
+}
+
+p.main {
+  text-indent: 40px;
+  /* font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif; */
+  font: normal 700 18px/30px Georgia, "Times New Roman", Times, serif;
+}
+
+p.main span {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: smaller;
+}
+
+p.ar {
+  direction: rtl;
+  text-align: right;
+}
+
+p.cap {
+  text-transform: capitalize;
+}
+
+p.upper {
+  text-transform: uppercase;
+}
+
+p.lower {
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  word-spacing: 20px;
+  letter-spacing: 3px;
+}
+
+span.old {
+  text-decoration: line-through;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+a:hover {
+  color: teal;
+  background-color: white;
+}
+
+a:active {
+  font-weight: bold;
+}
+
+ul {
+  /* list-style-type: square;
+  list-style-position: inside;
+  list-style-image: url("https://picsum.photos/10/10"); */
+  list-style: square inside url("https://picsum.photos/10/10");
+}
+
+ul li {
+  padding: 5px;
+  margin: 5px;
+
+  border-width: 3px 3px 1px 1px; /* Top Right Bottom Left */
+  border-style: double double dashed dashed;
+  border-color: white;
+
+  /* border-bottom-width: 3px;
+  border-bottom-style: double;
+  border-bottom-color: white; */
+
+  /* border-bottom: 3px double white; */
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- This Meta for Website Description -->
+    <meta name="description" content="Form Try" />
+    <title>Form</title>
+    <style>
+      fieldset {
+        background-color: #eeffff;
+        border: 1px solid teal;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      legend {
+        color: #eeffff;
+        background-color: teal;
+        padding: 5px 10px;
+        border-radius: 10px;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="file"],
+      textarea,
+      select,
+      .display-block {
+        display: block;
+      }
+
+      input,
+      textarea {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="register">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" maxlength="9" />
+
+        <label for="password">Password</label>
+        <input type="password" name="password" minlength="4" />
+
+        <label for="cv">Upload your CV</label>
+        <input type="file" />
+
+        <label for="summary">Summary</label>
+        <textarea></textarea>
+
+        <input type="checkbox" name="remember-me" />
+        <label for="remember-me">Remember Me</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Options</legend>
+        <label for="mobile" class="display-block">Choose your Mobile</label>
+        <input type="radio" name="mobile" value="Samsung" />
+        <span>Samsung</span>
+        <input type="radio" name="mobile" value="iPhone" />
+        <span>iPhone</span>
+        <input type="radio" name="mobile" value="Nokia" />
+        <span>Nokia</span>
+
+        <label for="technology" class="display-block"
+          >Select your Technologies</label
+        >
+        <select name="technology">
+          <optgroup label="Frontend">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+          </optgroup>
+          <optgroup label="Backend">
+            <option value="NoSQL">NoSQL</option>
+            <option value="MongoDB">MongoDB</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Submit</legend>
+
+        <input type="image" src="https://picsum.photos/100/100" alt="Submit" />
+        <br />
+
+        <input type="hidden" value="test" />
+        <input type="button" value="Say Hi" onclick="alert('Hello World!')" />
+        <input type="submit" value="Sign Up" />
+        <input type="reset" value="Restore Default" />
+      </fieldset>
+    </form>
+  </body>
+</html>
