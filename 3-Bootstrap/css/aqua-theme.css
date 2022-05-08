@@ -1,0 +1,5 @@
+:root {
+  --primary-color: rgb(5, 161, 161);
+  --primary-color-medium-opacity: rgba(5, 161, 161, 0.7);
+  --primary-color-light-opacity: rgba(5, 161, 161, 0.1);
+}
