@@ -1,11 +1,21 @@
 $(document).ready(function () {
   // $(".loader").style.display = "none";
-  // $("html").animate({ scrollTop: 0 }, 100);
   $("html").animate({ scrollTop: 0 }, function () {
     $(".spinner").fadeOut(2000, function () {
       $("body").css("overflow", "auto");
       $(this).parent().fadeOut(1000);
       $(this).parent().remove();
+    });
+  });
+
+  new WOW().init();
+
+  $(function () {
+    $("html").niceScroll({
+      cursorcolor: "var(--primary-color)",
+      cursorwidth: "7px",
+      cursoropacitymin: 0.5,
+      cursorborder: "none",
     });
   });
 });
