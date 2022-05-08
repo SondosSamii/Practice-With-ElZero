@@ -59,6 +59,7 @@ nav .dropdown-item,
 .testimonials .carousel-indicators [data-bs-target],
 .plans h4,
 .subscribe #subscribe-btn,
+.clients img,
 footer .social-media-list li,
 footer .our-work img {
   -webkit-transition: all 0.5s ease-in-out;
@@ -262,6 +263,21 @@ nav .dropdown-item:active {
   box-shadow: none;
 }
 
+/* Clients */
+#clients {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+#clients img {
+  display: inline-block;
+  opacity: 0.5;
+}
+
+#clients img:hover {
+  opacity: 1;
+}
+
 /* Progress Section */
 .progress-section {
   background-color: var(--primary-color-light-opacity);
@@ -338,6 +354,7 @@ footer .copyright a {
 .loader-overlay {
   z-index: 9;
   background-color: #fff;
+  /* height: 100%; */
 }
 
 .spinner {
