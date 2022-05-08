@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Description" content="Welcome to HTML5 Practice" />
+    <title>Hello HTML5</title>
+    <link rel="stylesheet" href="1-style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hello World!</h1>
+      <p>
+        Developed by
+        <a href="https://www.github.com/SondosSamii" target="_blank"
+          >SondosSamii</a
+        >
+      </p>
+    </header>
+    <nav>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+      </ul>
+    </nav>
+
+    <div class="post">
+      <article>
+        <header>
+          <h2>Welcome to New Tags in HTML</h2>
+          <p>Learn more to be a Frontend Developer</p>
+        </header>
+        <section>
+          <header>
+            <h3>Progress Test</h3>
+            <progress max="10" value="7"></progress>
+          </header>
+          <header>
+            <h3>Meter Test</h3>
+            <meter low="0.3" high="0.5" optimum="0.2" value="0.75"></meter>
+          </header>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h2>Article to test code inside figure</h2>
+          <p>Learn more to be a Frontend Developer</p>
+        </header>
+        <section>
+          <figure>
+            <figcaption>The div Syntax should be like this:</figcaption>
+            <code>&lt;div&gt;This is to test div code&lt;/div&gt;</code>
+          </figure>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h2>Article to test image inside figure</h2>
+          <p>Learn more to be a Frontend Developer</p>
+        </header>
+        <section>
+          <figure class="img-figure">
+            <img
+              src="https://picsum.photos/300/100"
+              alt="Placeholder"
+              title="Placeholder"
+            />
+            <figcaption>Image Placeholder Figure</figcaption>
+          </figure>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h2>Listen to Qura'n 💌 Ramadan Kareem :)</h2>
+          <p>Test Audio & video</p>
+        </header>
+        <section>
+          <h3>Yasser Mamdouh</h3>
+          <audio controls loop src="media/Yasser-Mamdouh.mp3">
+            Your Browser doesn't support Audio Technology
+          </audio>
+          <!-- <audio controls autoplay loop muted preload="auto">
+            <source src="media/Yasser-Mamdouh.mp3" type="audio/mpeg" />
+            Your Browser doesn't support Audio Technology
+          </audio> -->
+          <video
+            controls
+            width="300"
+            height="200"
+            poster="https://yt3.ggpht.com/ytc/AKedOLRCnURWSyh5UjACyDCNfXoWJ24iNWTyBGyQVFsW4Q=s900-c-k-c0x00ffffff-no-rj"
+            src="media/Yasser-Mamdouh.mp4"
+          >
+            Your Browser doesn't support Audio Technology
+          </video>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h2>Article about using New Form Input Fields</h2>
+          <p>Email, Url, Search, Number, etc.</p>
+        </header>
+        <section>
+          <form novalidate>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="url">Link</label>
+            <input type="url" name="url" id="url" />
+            <label for="search">Search</label>
+            <input type="search" name="search" id="search" />
+            <label for="tel">Telephone</label>
+            <input type="tel" name="tel" id="tel" />
+            <label for="num">Number from 0 to 30</label>
+            <input
+              type="number"
+              name="number"
+              min="0"
+              max="30"
+              value="9"
+              step="3"
+              id="num"
+            />
+            <label for="range">Range from 0 to 10</label>
+            <input
+              type="range"
+              name="range"
+              min="0"
+              max="10"
+              value="3"
+              id="range"
+            />
+            <input type="file" multiple />
+
+            <!-- Not Supported: IE -->
+            <label for="color">Color</label>
+            <input type="color" name="theme" id="color" value="#5DC3E5" />
+
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time" />
+            <label for="datetime">Datetime-Local</label>
+            <input type="datetime-local" name="datetime" id="datetime" />
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" />
+
+            <!-- Not Supported: Firefox, IE, Safari -->
+            <label for="month">Month</label>
+            <input type="month" name="month" id="month" />
+            <label for="week">Week</label>
+            <input type="week" name="week" id="week" />
+
+            <input type="submit" value="Send" />
+          </form>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h2>Welcome in New Attributes of Form</h2>
+          <p>[novalidate, autofocus, autocomplete]</p>
+        </header>
+        <section>
+          <form id="main-form" action="php/validate.php" method="get">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              required
+              pattern="[A-Za-z]{1,6}"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="off"
+              multiple
+            />
+            <label for="mobile">Number</label>
+            <input type="text" id="mobile" value="+2010123456789" readonly />
+            <label for="other">Other</label>
+            <input type="text" id="other" value="+2010123456789" disabled />
+            <input type="submit" value="Validate" />
+            <input
+              type="submit"
+              value="Send"
+              formaction="php/send.php"
+              formmethod="post"
+            />
+            <input
+              type="submit"
+              value="Submit in New Window"
+              formtarget="_blank"
+              formnovalidate
+            />
+          </form>
+          <input
+            type="text"
+            name="nickname"
+            id="nickname"
+            form="main-form"
+            placeholder="Type Your Nickname"
+            required
+          />
+        </section>
+      </article>
+    </div>
+
+    <aside>
+      <section class="aside-section">
+        <h3>Categories</h3>
+        <ul>
+          <li>Intro</li>
+          <li>Syntax</li>
+          <li>Semantics</li>
+          <li>New Tags</li>
+        </ul>
+      </section>
+
+      <section class="aside-section">
+        <h3>What's your best browser</h3>
+        <form>
+          <label for="browser-choice">Choose from here:</label>
+          <input list="browsers-list" id="browser-choice" />
+          <datalist id="browsers-list">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Safari"></option>
+            <option value="Opera"></option>
+          </datalist>
+          <input type="submit" value="Choose" />
+        </form>
+      </section>
+
+      <section class="aside-section">
+        <h3>Your Age in Days</h3>
+        <form
+          oninput="result.value = parseInt(age.value) * parseInt(days.value)"
+        >
+          <input type="text" name="age" />
+          <input type="hidden" name="days" value="365" />
+          <output name="result"></output>
+        </form>
+      </section>
+    </aside>
+
+    <div class="clearfix"></div>
+
+    <footer>
+      <p>Copyright <time id="year"></time> &copy; All Right Reserved</p>
+    </footer>
+    <script>
+      let thisYear = new Date().getFullYear();
+      let yearElement = document.getElementById("year");
+
+      yearElement.innerHTML = thisYear;
+      yearElement.setAttribute("datetime", thisYear);
+    </script>
+  </body>
+</html>

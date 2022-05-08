@@ -1,0 +1,12 @@
+<svg width="300" height="280" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="100%" height="100%" fill="#FBDAF1" />
+  <circle r="50" cx="75" cy="70" fill="#aa98a9" />
+  <circle r="50" cx="225" cy="70" fill="#aa98a9" />
+  <circle r="20" cx="85" cy="80" fill="#E3CBF6" />
+  <circle r="20" cx="215" cy="80" fill="#E3CBF6" />
+  <rect x="75" y="175" width="50%" height="25%" fill="#B291CE" />
+  <circle r="40" cx="100" cy="160" fill="#FBDAF1" />
+  <circle r="40" cx="200" cy="160" fill="#FBDAF1" />
+  <circle r="70" cx="150" cy="170" fill="#FBDAF1" />
+  Your Browser does not support SVG
+</svg>

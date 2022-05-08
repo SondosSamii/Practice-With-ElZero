@@ -1,0 +1,19 @@
+box-shadow: Horizontal Shadow | Vertical Shadow | Blur | Spread | Color | inset;
+
+text-shadow: Horizontal Shadow | Vertical Shadow | Blur-radius | Color;
+
+transform: matrix(ScaleX, SkewY, SkewX, ScaleY, TranslateX, TranslateY);
+
+transform: matrix3d(ScaleX, 0, 0, 0, 0, ScaleY, 0, 0, 0, 0, 1, 0, TranslateX, TranslateY, ScaleZ, 1);
+
+flex-flow: Flex-Direction | Flex-Wrap;
+
+flex: Flex-Grow | Flex-Shrink | Flex-Basis
+    (Default Values: 0 1 auto);
+
+transition: Property | Duration | Timing-Function | Delay;
+
+columns: Column-Width | Column-Count;
+
+animation: Name | Duration | Timing-Function | Delay | Iteration | Direction | Fill-Mode | Play-State
+    (Default Values: none 0 ease 0 1 normal none running)
