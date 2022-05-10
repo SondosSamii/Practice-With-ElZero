@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  // $(".loader").style.display = "none";
   $("html").animate({ scrollTop: 0 }, function () {
     $(".spinner").fadeOut(2000, function () {
       $("body").css("overflow", "auto");
@@ -34,7 +33,6 @@ let mainCarousel = document.getElementById("mainCarousel"),
   carousel2 = new bootstrap.Carousel(testimonialsCarousel, { interval: 5000 });
 
 $(window).scroll(function () {
-  // console.log($(this).scrollTop());
   if ($(this).scrollTop() >= 550) {
     $(".scroll-top").show(300);
   } else {
