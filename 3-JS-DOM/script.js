@@ -19,8 +19,8 @@ function checkClass() {
 }
 
 let testClasses = document.getElementsByClassName("test-class");
-for (let i = 0; i < testClasses.length; i++) {
-  testClasses[i].addEventListener("click", checkClass);
+for (const element of testClasses) {
+  element.addEventListener("click", checkClass);
 }
 
 let form = document.querySelectorAll("form")[1],
@@ -81,7 +81,6 @@ document.getElementById("power-down").onclick = function () {
 
 window.onscroll = function () {
   if (document.documentElement.scrollTop > 40) {
-    // console.log(document.body.firstElementChild);
     document.body.firstElementChild.style.backgroundColor = "cyan";
   } else {
     document.body.firstElementChild.style.backgroundColor = "bisque";
