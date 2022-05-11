@@ -57,6 +57,6 @@ console.log(allFriends.slice(-5, -3));
 let specialFriend = allFriends.indexOf("Amr");
 console.log(specialFriend, allFriends[specialFriend]);
 
-for (let i = 0; i < friends.length; i++) {
-  console.log(friends[i]);
+for (const friend of friends) {
+  console.log(friend);
 }
