@@ -66,12 +66,6 @@ let x = 0,
   y = 5,
   stars = "";
 
-// while (x < 5) {
-//   stars += "*";
-//   console.log(stars);
-//   x++;
-// }
-
 do {
   stars += "*";
   console.log(stars);
@@ -95,7 +89,7 @@ let birthDate = new Date("11/22/1994 14:02:17"); //Short Date
 console.log("Birth Date: ");
 console.log(birthDate);
 
-// console.log(new Date().getTimezoneOffset());
+console.log(new Date().getTimezoneOffset());
 
 console.log(new Date("11/22/1994 00:10").getDay()); // Tuesday
 console.log(new Date("11/22/1994 00:10").getUTCDay()); //Monday

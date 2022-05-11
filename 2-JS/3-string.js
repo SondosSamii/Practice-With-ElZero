@@ -7,7 +7,6 @@ console.log(num);
 console.log("Its type: " + typeof num);
 
 let numToStr = num.toString();
-// let numToStr = String(num);
 
 console.log(numToStr);
 console.log(
@@ -17,8 +16,6 @@ console.log(
 console.log("*****String Methods*****");
 
 let phrase = "I love HTML, CSS and JavaScript",
-  // word = phrase.indexOf( "love" );
-  // word = phrase.lastIndexOf( "love", 5 );
   word = phrase.search(/html/i); // i >> Make all expression Insensitive
 
 console.log(word);
@@ -43,11 +40,6 @@ console.log(
 );
 
 console.log("After replacing: " + phrase.replace(/javascript/i, "JS"));
-
-// let myName = String.fromCharCode(83, 79, 78, 68, 79, 83);
-
-// console.log("FromCharCode: ", myName); //SONDOS
-// console.log("Lowered Case: ", myName.toLowerCase());
 
 // Chain Methods
 let myName = String.fromCharCode(83, 79, 78, 68, 79, 83)

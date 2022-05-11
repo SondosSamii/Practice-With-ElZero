@@ -2,8 +2,6 @@ let friends = ["Amr", "Sondos", "Hadeer", "Ahmed", "Radwa"];
 
 if (Array.isArray(friends)) {
   console.log("Yay, This is Array");
-  // console.log(friends.toString());
-  // console.log(friends.toLocaleString());
   console.log(friends.join(", "));
 } else {
   console.log("Mmmm, This is not Array");

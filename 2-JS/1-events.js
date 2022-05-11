@@ -5,7 +5,6 @@ window.onload = function () {
 function greeting(name) {
   document.getElementById("test").innerHTML =
     "Hello " + name.value + ", I hope you are fine :)";
-  //   name.value = "";
 }
 
 function reset(name) {
