@@ -122,11 +122,6 @@ figcaption {
   text-transform: uppercase;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 p,
 q {
   line-height: 1.7;
@@ -145,8 +140,17 @@ q {
   background-color: var(--dark-bg-color);
 }
 
+.img-fix {
+  max-width: 100%;
+  height: auto;
+}
+
 .p {
   padding: 0.5rem 0.75rem;
+}
+
+.p-0 {
+  padding: 0;
 }
 
 .py {
@@ -209,7 +213,7 @@ footer a {
 /* Header */
 .slider {
   height: 400px;
-  background-image: url("https://picsum.photos/1900/600");
+  background-image: url(https://picsum.photos/1900/600);
   background-size: cover;
   display: grid;
 }
@@ -270,13 +274,9 @@ nav ul a:focus {
   background-color: var(--light-bg-color);
 }
 
-.about-me .img {
-  display: grid;
-  padding: 0;
-}
-
-.about-me .desc {
-  padding: 0 3rem;
+.about-me .img-container {
+  background-image: url(https://picsum.photos/600/750);
+  min-height: 700px;
 }
 
 .about-me .desc p:last-of-type {
@@ -466,6 +466,10 @@ footer ul li a {
   .container {
     max-width: 540px;
   }
+
+  .about-me .desc {
+    padding: 0 2rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -483,5 +487,9 @@ footer ul li a {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1170px;
+  }
+
+  .about-me .desc {
+    padding: 0 3rem;
   }
 }
