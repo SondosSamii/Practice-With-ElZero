@@ -201,7 +201,8 @@ hr {
 /* Grouping */
 nav ul a,
 .about-me h3,
-.testimonials ul li {
+.testimonials ul li,
+footer a {
   transition: all 0.5s ease-in-out;
 }
 
@@ -429,12 +430,33 @@ nav ul a:focus {
 }
 
 /* Footer */
-
 footer {
   background-color: var(--darker-bg-color);
   padding: 1rem 0;
 }
 
+footer a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer ul li {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+}
+
+/* Media Queries */
 @media screen and (min-width: 576px) {
   .container {
     max-width: 540px;
