@@ -1,0 +1,9 @@
+cd                                  => Change Directory
+ls                                  => List all Directories and Files
+mkdir <Directory-Name>              => Make Directory
+mv <Directory> <Destination>        => Move Directory to Destination,
+                                        If Destination not found,
+                                        it will rename Directory to Destination
+rm <Directory-Name> -d              => Remove Empty Directory
+rm <Directory-Name> -r              => Remove Directory even if it's not empty
+cp <Directory> <New-Directory> -r   => Copy Directory to New Directory (With its content)
