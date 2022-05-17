@@ -70,6 +70,13 @@ q {
   font-style: italic;
 }
 
+hr {
+  border: 0;
+  height: 2px;
+  background-color: #f3f2f3;
+  margin: 1rem 0;
+}
+
 .main-btn {
   font-weight: 600;
   color: #2ecc71;
@@ -78,11 +85,9 @@ q {
   margin: 1.5rem 0;
 }
 
-hr {
-  border: 0;
-  height: 2px;
-  background-color: #f3f2f3;
-  margin: 1rem 0;
+.img-fix {
+  max-width: 100%;
+  height: auto;
 }
 
 nav .row {
@@ -119,11 +124,6 @@ footer, .portfolio, .testimonials, .resume, .slider {
   text-transform: uppercase;
   padding: 0.75rem 1.5rem;
   cursor: pointer;
-}
-
-.portfolio .work > .row img {
-  max-width: 100%;
-  height: auto;
 }
 
 .contact-me form textarea, .contact-me form input[type=text], .contact-me form input[type=email] {

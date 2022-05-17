@@ -65,6 +65,13 @@ q {
   font-style: italic;
 }
 
+hr {
+  border: 0;
+  height: 2px;
+  background-color: $light-bg-color;
+  margin: 1rem 0;
+}
+
 .main-btn {
   @extend %btn;
   font-weight: 600;
@@ -74,11 +81,9 @@ q {
   margin: $margin 0;
 }
 
-hr {
-  border: 0;
-  height: 2px;
-  background-color: $light-bg-color;
-  margin: 1rem 0;
+.img-fix {
+  max-width: 100%;
+  height: auto;
 }
 
 %space-between {
@@ -115,11 +120,6 @@ hr {
   text-transform: uppercase;
   padding: 0.75rem 1.5rem;
   cursor: pointer;
-}
-
-%img-fix {
-  max-width: 100%;
-  height: auto;
 }
 
 %input {
@@ -369,7 +369,6 @@ nav {
     > .row {
       @extend %center;
       img {
-        @extend %img-fix;
         margin: $halfGutter 0;
         -webkit-box-shadow: 0px 0px 9px $primary-font-color;
         box-shadow: 0px 0px 9px $primary-font-color;
