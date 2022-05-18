@@ -1,5 +1,6 @@
 cd                                  => Change Directory
 ls                                  => List all Directories and Files
+touch <index.html>                  => Make an <index.html> file
 mkdir <Directory-Name>              => Make Directory
 mv <Directory> <Destination>        => Move Directory to Destination,
                                         If Destination not found,
@@ -7,3 +8,44 @@ mv <Directory> <Destination>        => Move Directory to Destination,
 rm <Directory-Name> -d              => Remove Empty Directory
 rm <Directory-Name> -r              => Remove Directory even if it's not empty
 cp <Directory> <New-Directory> -r   => Copy Directory to New Directory (With its content)
+
+echo "<Message>"                    => Prints this Message
+echo "<Text>" > file.txt            => Creates file.txt and Add this Text to it
+                                        If file.txt exist, It Replace its content with my new Text
+echo "<Text>" >> file.txt           => Creates file.txt and Add this Text to it
+                                        If file.txt exist, It Append my Text to its content
+
+cat file.txt                        => Prints content of file.txt
+cat file.txt file2.txt              => Prints content of file.txt and file2.txt
+cat *                               => Prints content of all files in this Directory
+cat file.txt > file2.txt            => Copy content of file.txt to file2.txt (Replace content)
+cat file.txt >> file2.txt           => Copy content of file.txt to file2.txt (Append content)
+cat file.txt file2.txt > final.txt  => Copy content of file and file2 to a final.txt
+
+grep <"term"> file.txt              => If term exist in file.txt, It prints it
+grep <"term"> -r                    => List of files that has this <term> and prints the <term>
+grep <"term"> -r <Directory>        => Like Above but searches in this <Directory> only
+grep <"term"> -r -l                 => List of files that has this <term> only
+
+file <file.txt>                     => Prints sort of this file
+file *                              => Prints sort of all files in my Directory
+
+rename <index.html> <index.css>     => Rename <index.html> to <index.css>
+                                        But won't change its sort
+
+tree /a                         => Show all Directories as a tree
+osk                             => On Screen Keyboard
+tasklist                        => Ctrl+Alt+Delete
+
+alias                           => Shows all shorthands
+alias /?                        => Help of alias
+
+ping <website-link>             => Sent Packets to this website and check it
+ipconfig                        => Shows Windows IP Configuration
+whoami                          => Shows my User Name
+systeminfo                      => Shows System Info
+systeminfo <systeminfo.txt>     => Save System Info on file <systeminfo.txt>
+<systeminfo> | clip             => Save System Info to the Windows Clipboard
+                                    I can change <systeminfo> with any command that returns info
+
+https://ss64.com/               => Command line reference
